@@ -1,0 +1,74 @@
+[
+  {
+    "id": "domain-software-development",
+    "text": "Domain: Software Development\nAbout: Software Development focuses on designing, coding, testing, and maintaining software applications used on computers and servers. Developers solve real-world problems using logic and programming languages. This field builds strong problem-solving ability and system thinking. It offers opportunities in startups, enterprises, and product-based companies. Continuous learning is key due to evolving technologies.\nDescription: Build robust software systems, desktop applications, and tools.\nTools: Common tools include VS Code for coding, Git and GitHub for version control, compilers and interpreters for running programs, and Linux for understanding system-level operations. Debuggers help find errors efficiently. These tools improve productivity and collaboration. Learning command-line usage is highly beneficial.\nRoadmap: Start with C or Python to understand programming basics and logic.\nLearn Object-Oriented Programming concepts and data structures.\nPractice by building command-line and small backend projects.\nUnderstand databases, APIs, and software design principles.\nMove towards scalable and system-level applications.\nProjects: Calculator, To-Do App, File Manager",
+    "metadata": {
+      "type": "structured",
+      "title": "Software Development"
+    }
+  },
+  {
+    "id": "domain-web-development",
+    "text": "Domain: Web Development\nAbout: Web Development involves creating websites and web applications accessed through browsers. It combines design, logic, and interactivity. Developers build user interfaces and backend services. The field is fast-growing with demand in all industries. Creativity and problem-solving go hand in hand.\nDescription: Create websites and web applications for the internet.\nTools: VS Code is used for coding, browsers for testing, Git for version control, and Node.js for backend development. Browser developer tools help debug layouts and scripts. Hosting platforms are also commonly used. These tools enable full-stack development.\nRoadmap: Learn HTML, CSS, and JavaScript fundamentals.\nUnderstand responsive design and basic UI principles.\nLearn React for frontend development.\nLearn Node.js and MongoDB for backend.\nBuild and deploy full-stack applications.\nProjects: Portfolio websites, Weather apps, E-commerce sites",
+    "metadata": {
+      "type": "structured",
+      "title": "Web Development"
+    }
+  },
+  {
+    "id": "domain-mobile-app-development",
+    "text": "Domain: Mobile App Development\nAbout: Mobile App Development focuses on building applications for smartphones and tablets. These apps can be developed for Android, iOS, or both using cross-platform frameworks. Mobile apps are used daily for communication, shopping, banking, and learning. This field combines programming logic, UI design, and user experience. Demand is high as mobile usage continues to grow.\nDescription: Build applications for Android and iOS devices.\nTools: Android Studio is used for native Android development, while Flutter SDK helps build cross-platform apps. VS Code is commonly used for coding and debugging. Emulators and physical devices are used for testing apps. Git is essential for version control and collaboration.\nRoadmap: Learn Java/Kotlin or Dart basics\nUnderstand mobile UI layouts\nWork with APIs and databases\nBuild complete apps\nPublish apps to Play Store/App Store\nProjects: Calculator App, Notes App, Expense Tracker, Quiz App, Simple Chat App",
+    "metadata": {
+      "type": "structured",
+      "title": "Mobile App Development"
+    }
+  },
+  {
+    "id": "domain-ai-machine-learning",
+    "text": "Domain: AI & Machine Learning\nAbout: AI & Machine Learning focus on creating systems that learn from data and make intelligent decisions. These technologies power chatbots, recommendation systems, and image recognition. AI is used across industries like healthcare, finance, and automation. It is one of the highest-paying tech fields. Strong logic and analytical thinking are important.\nDescription: Teach computers to learn from data and make decisions.\nTools: Python is the main language along with Jupyter Notebook and Google Colab. Libraries like NumPy, Pandas, Scikit-learn, TensorFlow, and PyTorch are essential. GPUs are often used for faster training. These tools help build and evaluate models efficiently.\nRoadmap: Learn Python & math basics.\nUnderstand ML algorithms.\nPractice data preprocessing.\nLearn deep learning.\nBuild AI projects.\nProjects: House Price Prediction, Spam Classifier, Recommendation System, Chatbot, Face Detection",
+    "metadata": {
+      "type": "structured",
+      "title": "AI & Machine Learning"
+    }
+  },
+  {
+    "id": "domain-web-designing",
+    "text": "Domain: Web Designing\nAbout: Web Designing focuses on the aesthetics and usability of websites. Designers create layouts, color schemes, and visual elements that engage users. It requires a good eye for design and understanding of user experience principles.\nDescription: Design the look and feel of websites.\nTools: Designers use tools like Figma, Adobe XD, and Photoshop. VS Code is used for implementing designs in HTML/CSS.\nRoadmap: Learn design principles (Color, Typography, Layout).\nMaster Figma or Adobe XD.\nLearn HTML & CSS for implementation.\nBuild portfolio projects.\nProjects: Portfolio Design, Landing Page, Mobile App UI",
+    "metadata": {
+      "type": "structured",
+      "title": "Web Designing"
+    }
+  },
+  {
+    "id": "domain-data-science-analytics",
+    "text": "Domain: Data Science & Analytics\nAbout: Data Science & Analytics focus on analyzing data to extract insights and support decisions. Data analysts understand past trends, while data scientists predict future outcomes. This field is used in business, finance, marketing, and tech. Data-driven decision-making is critical for companies. Logical thinking and curiosity are key skills.\nDescription: Analyze data to find trends and insights.\nTools: Python, SQL, Excel, Power BI, and Tableau are widely used. Jupyter Notebook helps with experimentation. Databases store large datasets. Visualization tools present insights clearly to stakeholders.\nRoadmap: Learn Python & SQL.\nPerform data cleaning.\nCreate visualizations.\nLearn basic ML.\nWork on real datasets.\nProjects: Sales Analysis, Customer Churn Analysis, Dashboard Creation, Stock Analysis",
+    "metadata": {
+      "type": "structured",
+      "title": "Data Science & Analytics"
+    }
+  },
+  {
+    "id": "domain-cybersecurity",
+    "text": "Domain: Cybersecurity\nAbout: Cybersecurity focuses on protecting systems, networks, and data from cyber attacks. Professionals identify vulnerabilities and prevent security breaches. With increasing cyber threats, this field is critical for all organizations. It requires strong analytical and ethical skills. Demand is growing globally.\nDescription: Protect systems and networks from digital attacks.\nTools: Linux and Kali Linux are commonly used. Tools like Wireshark, Nmap, Metasploit help analyze and test security. Virtual machines allow safe practice. Python and shell scripting automate tasks.\nRoadmap: Learn networking basics.\nUnderstand Linux.\nStudy security fundamentals.\nPractice ethical hacking.\nAdvanced threat analysis.\nProjects: Password Strength Checker, Port Scanner, Vulnerability Scanner, Network Monitor",
+    "metadata": {
+      "type": "structured",
+      "title": "Cybersecurity"
+    }
+  },
+  {
+    "id": "domain-typewriting",
+    "text": "Domain: Typewriting\nAbout: Typewriting is the skill of typing text quickly and accurately on a computer keyboard. It improves productivity and efficiency in various professional fields. Mastering touch typing allows you to type without looking at the keys.\nDescription: Master touch typing to improve speed and accuracy.\nTools: Online platforms like TypingClub and Ratatype provide structured lessons. Keyboards with comfortable layouts, such as ergonomic or mechanical keyboards, can enhance the experience.\nRoadmap: Learn the Home Row keys.\nPractice top and bottom row keys.\nMaster capital letters and symbols.\nIncrease typing speed to 40 WPM.\nAchieve high accuracy (95%+).\nPractice advanced texts and numbers.\nProjects: Reach 30 WPM with 100% Accuracy, Type a full page without looking, Beat personal best on Monkeytype",
+    "metadata": {
+      "type": "structured",
+      "title": "Typewriting"
+    }
+  },
+  {
+    "id": "domain-ats-friendly-resume",
+    "text": "Domain: ATS Friendly Resume\nAbout: Applicant Tracking Systems (ATS) are software tools used by employers to filter and rank resumes. To get hired, your resume must be 'ATS-friendly'—formatted simply and optimized with relevant keywords so bots can read it. Mastering this ensures your application reaches a human recruiter. A strong, ATS-optimized professional summary might look like this: 'I have gained foundational knowledge in software development, web development, mobile application development, artificial intelligence, machine learning, data science, analytics, and cybersecurity through structured online learning platforms...'\nDescription: Optimize your resume to pass automated screening filters.\nTools: Use standard word processors like Microsoft Word or Google Docs, or use dedicated Resume Builders like FlowCV and Teal. Save as .docx or PDF to ensure compatibility.\nRoadmap: Analyze Job Descriptions for keywords.\nChoose a simple, single-column layout.\nUse standard headings (Experience, Skills).\nWrite keyword-rich bullet points.\nTest your resume with an ATS scanner.\nProofread for zero errors.\nProjects:",
+    "metadata": {
+      "type": "structured",
+      "title": "ATS Friendly Resume"
+    }
+  }
+]

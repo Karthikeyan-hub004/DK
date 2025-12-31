@@ -1,0 +1,264 @@
+/* Chatbot Toggle Button */
+.chatbot-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+  z-index: 10000;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatbot-toggle:hover {
+  transform: scale(1.1);
+}
+
+.chatbot-toggle.open {
+  transform: rotate(90deg);
+  background: var(--surface);
+  color: var(--text);
+  border: 2px solid var(--border);
+}
+
+/* Chatbot Window */
+.chatbot {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 380px;
+  height: 600px;
+  max-height: calc(100vh - 120px);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-sans);
+  z-index: 9999;
+  overflow: hidden;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Header */
+.chat-header {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  padding: 16px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Body */
+.chat-body {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: rgba(15, 23, 42, 0.5);
+  /* slightly darker tint */
+}
+
+/* Messages */
+.msg {
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  max-width: 85%;
+  word-wrap: break-word;
+  animation: fadeIn 0.3s ease;
+}
+
+.msg.user {
+  align-self: flex-end;
+  background: var(--primary);
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.msg.bot {
+  align-self: flex-start;
+  background: #334155;
+  /* Slightly lighter than surface */
+  color: var(--text);
+  border-bottom-left-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+/* Markdown Styling within Bot Messages */
+.msg.bot p {
+  margin-bottom: 8px;
+}
+
+.msg.bot p:last-child {
+  margin-bottom: 0;
+}
+
+.msg.bot ul,
+.msg.bot ol {
+  margin-left: 20px;
+  margin-bottom: 8px;
+}
+
+.msg.bot li {
+  margin-bottom: 4px;
+}
+
+.msg.bot strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.msg.bot code {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.msg.bot.intro {
+  background: transparent;
+  border: 1px dashed var(--border);
+  color: var(--text-muted);
+  text-align: center;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.msg.bot.typing {
+  font-style: italic;
+  color: var(--text-muted);
+  background: transparent;
+  border: none;
+  padding-left: 0;
+}
+
+/* Footer */
+.chat-footer {
+  padding: 16px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 10px;
+  background: var(--surface);
+}
+
+.chat-footer input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 99px;
+  border: 1px solid var(--border);
+  background: #0f172a;
+  /* Dark input bg */
+  color: var(--text);
+  outline: none;
+  transition: all 0.2s;
+}
+
+.chat-footer input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+.chat-footer button {
+  padding: 10px 20px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 99px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.chat-footer button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.chat-footer button:active {
+  transform: scale(0.95);
+}
+
+/* Custom Scrollbar for Chat */
+.chat-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat-body::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .chatbot {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    border-radius: 0;
+    border: none;
+  }
+
+  .chatbot-toggle {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .chat-header {
+    padding: 20px 16px;
+    /* Larger touch target area */
+  }
+
+  /* If open, move toggle to top right inside header essentially */
+  .chatbot-toggle.open {
+    top: 15px;
+    right: 15px;
+    bottom: auto;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    box-shadow: none;
+    z-index: 10001;
+    /* Above header text */
+  }
+}

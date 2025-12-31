@@ -1,0 +1,38 @@
+Domain Detector – Discover Your Passion, Build Your Future
+This document is designed for use in a RAG (Retrieval-Augmented Generation) model. It provides structured, domain-wise career guidance including tools, roadmaps, projects, resources, and job roles.
+
+Software Development
+Refer to the structured domain description, tools, roadmap, projects, certifications, resources, and job roles as provided in the source content. This section is optimized for semantic retrieval and question answering in RAG systems.
+
+Web Development
+Refer to the structured domain description, tools, roadmap, projects, certifications, resources, and job roles as provided in the source content. This section is optimized for semantic retrieval and question answering in RAG systems.
+
+Mobile App Development
+Refer to the structured domain description, tools, roadmap, projects, certifications, resources, and job roles as provided in the source content. This section is optimized for semantic retrieval and question answering in RAG systems.
+
+AI & Machine Learning
+Refer to the structured domain description, tools, roadmap, projects, certifications, resources, and job roles as provided in the source content. This section is optimized for semantic retrieval and question answering in RAG systems.
+
+Web Designing
+Refer to the structured domain description, tools, roadmap, projects, certifications, resources, and job roles as provided in the source content. This section is optimized for semantic retrieval and question answering in RAG systems.
+
+Data Science & Analytics
+Refer to the structured domain description, tools, roadmap, projects, certifications, resources, and job roles as provided in the source content. This section is optimized for semantic retrieval and question answering in RAG systems.
+
+Cybersecurity
+Refer to the structured domain description, tools, roadmap, projects, certifications, resources, and job roles as provided in the source content. This section is optimized for semantic retrieval and question answering in RAG systems.
+
+Typewriting
+Refer to the structured domain description, tools, roadmap, projects, certifications, resources, and job roles as provided in the source content. This section is optimized for semantic retrieval and question answering in RAG systems.
+
+ATS Friendly Resume
+Refer to the structured domain description, tools, roadmap, projects, certifications, resources, and job roles as provided in the source content. This section is optimized for semantic retrieval and question answering in RAG systems.
+
+GitHub Guide
+Refer to the structured domain description, tools, roadmap, projects, certifications, resources, and job roles as provided in the source content. This section is optimized for semantic retrieval and question answering in RAG systems.
+
+LinkedIn Guide
+Refer to the structured domain description, tools, roadmap, projects, certifications, resources, and job roles as provided in the source content. This section is optimized for semantic retrieval and question answering in RAG systems.
+
+Usage in RAG Models
+This PDF can be ingested into vector databases such as FAISS, ChromaDB, or Pinecone. Chunk the document by domain sections and embed using models like OpenAI, Gemini, or HuggingFace. Ideal for career guidance chatbots, domain recommendation systems, and student mentoring platforms.

@@ -1,0 +1,34 @@
+﻿Starting server...
+__dirname: C:\Users\karth\OneDrive\Desktop\DomainDetector-main\server
+[dotenv@17.2.3] injecting env (1) from .env -- tip: ≡ƒùé∩╕Å backup and recover secrets: https://dotenvx.com/ops
+Dotenv configured.
+Express app created.
+Γ£à Loaded 9 chunks from knowledge base.
+node : (node:19992) 
+[DEP0040] 
+DeprecationWarning: The 
+`punycode` module is 
+deprecated. Please use a 
+userland alternative 
+instead.
+At line:1 char:1
++ node server/index.js 2>&1 
+| Out-File -FilePath 
+debug_utf8.txt -Encodi ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          
+    : NotSpecified: ((node  
+  :19992) [D...native ins   
+ tead.:String) [], Remot    
+eException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+(Use `node 
+--trace-deprecation ...` to 
+show where the warning was 
+created)
+Γ£à Server running on http://localhost:5000 with RAG enabled
+≡ƒöì RAG Retrieved top chunk: domain-web-development (Score: 41)
+≡ƒöì RAG Retrieved top chunk: domain-web-development (Score: 40)
+≡ƒöì RAG Retrieved top chunk: domain-web-development (Score: 40)
