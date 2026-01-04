@@ -172,11 +172,19 @@ Your goal is to make the user feel confident and excitement about their future c
     }
 });
 
-// Health Check
-app.get("/", (req, res) => {
-    res.send("DomainDetector RAG Server is Running");
+// API route
+app.get("/api/health", (req, res) => {
+    res.json({ status: "Backend working" });
 });
 
+// 👉 Serve Vite build files
+app.use(express.static(path.join(__dirname, "..", "dist")));
+
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "dist", "index.html"));
+});
+
+// 👉 IMPORTANT for Render
 app.listen(PORT, () => {
-    console.log(`✅ Server running on http://localhost:${PORT} with RAG enabled`);
+    console.log(`Server running on port ${PORT}`);
 });

@@ -439,3 +439,42 @@ Add relevant skills (e.g., Python, Communication). Ask peers to endorse you.
 **Useful Resources**
 - [Official Guide](https://www.linkedin.com/help/linkedin/answer/a1338274)
 - [YouTube Tutorials](https://www.youtube.com/results?search_query=linkedin+profile+tips+for+students)
+
+---
+
+## Project Structure
+
+```
+DomainDetector/
+├── .env
+├── .env.example
+├── .gitignore
+├── DEPLOYMENT.md
+├── README.md
+├── debug_utf8.txt
+├── index.html
+├── package-lock.json
+├── package.json
+├── vite.config.js
+├── public/
+│   └── road_map/
+├── server/
+│   ├── index.js
+│   ├── ingest.js
+│   └── knowledge.json
+└── src/
+    ├── App.jsx
+    ├── index.css
+    ├── main.jsx
+    ├── components/
+    │   ├── ChatBot.jsx
+    │   ├── Chatbot.css
+    │   └── Navbar.jsx
+    ├── data/
+    │   └── domains.js
+    └── pages/
+        ├── DomainDetail.jsx
+        ├── GitHubGuide.jsx
+        ├── Home.jsx
+        └── LinkedInGuide.jsx
+```
