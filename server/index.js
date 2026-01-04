@@ -36,6 +36,7 @@ console.log("Express app created.");
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:3000",
+  "https://divakar.onrender.com",
   process.env.FRONTEND_URL,
 ].filter(Boolean);
 
