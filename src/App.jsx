@@ -6,6 +6,7 @@ import DomainDetail from './pages/DomainDetail';
 import LinkedInGuide from './pages/LinkedInGuide';
 import GitHubGuide from './pages/GitHubGuide';
 import ChatBot from './components/ChatBot';
+import FeedbackModal from './components/FeedbackModal';
 
 
 
@@ -24,9 +25,10 @@ function App() {
                 </main>
                 <footer className="footer">
                     <div className="container">
-                        <p>© 2025 Domain Detector. Build your future.</p>
+                        <p>© 2026 Domain Detector. Build your future. | <a href="https://myportfolio775.netlify.app/my.html" target="_blank" rel="noopener noreferrer">My_Portfolio</a></p>
                     </div>
                 </footer>
+                <FeedbackModal />
                 <ChatBot />
             </div>
         </Router>
