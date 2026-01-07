@@ -25,10 +25,10 @@ function App() {
                 </main>
                 <footer className="footer">
                     <div className="container">
-                        <p>© 2026 Domain Detector. Build your future. | <a href="https://myportfolio775.netlify.app/my.html" target="_blank" rel="noopener noreferrer">My_Portfolio</a></p>
+                        <p>© 2026 Domain Detector. Build your future. | <a href="https://myportfolio775.netlify.app/my.html" target="_blank" rel="noopener noreferrer" className="portfolio-link">My_Portfolio</a></p>
                     </div>
+                    <FeedbackModal />
                 </footer>
-                <FeedbackModal />
                 <ChatBot />
             </div>
         </Router>

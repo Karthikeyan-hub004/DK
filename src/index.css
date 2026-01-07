@@ -236,6 +236,7 @@ ul {
     margin-top: 4rem;
     text-align: center;
     color: var(--text-muted);
+    position: relative;
 }
 
 .info-section {
@@ -298,6 +299,22 @@ ul {
     display: flex;
     align-items: center;
     border-left: 4px solid var(--secondary);
+}
+
+.portfolio-link {
+    color: #00aaff;
+    text-decoration: none;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #00aaff, 0 0 10px #00aaff, 0 0 15px #00aaff;
+    }
+
+    to {
+        text-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff, 0 0 30px #00aaff;
+    }
 }
 
 @keyframes fadeIn {
