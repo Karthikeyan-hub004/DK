@@ -60,7 +60,7 @@ export const domains = [
             { name: "JavaScript (Cisco NetAcad)", url: "https://www.netacad.com/learning-collections/javascript?courseLang=en-US" }
         ],
         youtube: [
-            { name: "Code io – Tamil", url: "https://www.youtube.com/watch?v=3jkub2c0kLA&list=PLhP5RsB7fhE2lGbXCw35H5opjIAksz2q5" }
+            { name: "code io - Tamil", url: "https://www.youtube.com/watch?v=3jkub2c0kLA&list=PLhP5RsB7fhE2lGbXCw35H5opjIAksz2q5" }
         ],
         websites: [
             { name: "freeCodeCamp", url: "https://www.freecodecamp.org/" },
@@ -95,7 +95,7 @@ export const domains = [
             { name: "JavaScript (Cisco NetAcad)", url: "https://www.netacad.com/learning-collections/javascript?courseLang=en-US" }
         ],
         youtube: [
-            { name: "Tamil Hacks – Vlogs", url: "https://www.youtube.com/watch?v=WlNjBmKKpR4&list=PLxLRoiL22apK1yzX_1dWIbudoObRVKuHX" }
+            { name: "Tamil Hacks - Vlogs", url: "https://www.youtube.com/watch?v=WlNjBmKKpR4&list=PLxLRoiL22apK1yzX_1dWIbudoObRVKuHX" }
         ],
         websites: [
             { name: "Flutter.dev", url: "https://flutter.dev/" },
@@ -131,7 +131,7 @@ export const domains = [
             { name: "SQL (Kaggle)", url: "https://www.kaggle.com/discussions/general/425278" }
         ],
         youtube: [
-            { name: "Chill and Learn", url: "https://www.youtube.com/watch?v=aiCIWGSCCKo&list=PLorkqpg7qgkw8xqc-RmuCgfCWRWCRnN-u" }
+            { name: "Chill and learn", url: "https://www.youtube.com/watch?v=aiCIWGSCCKo&list=PLorkqpg7qgkw8xqc-RmuCgfCWRWCRnN-u" }
         ],
         websites: [
             { name: "Kaggle", url: "https://www.kaggle.com/" },
@@ -326,4 +326,11 @@ export const domains = [
         projects: [],
         jobs: []
     }
+];
+
+export const games = [
+    { name: "Model Context", url: "https://codingfantasy.com/games/mcp" },
+    { name: "Protocol Panic", url: "https://cssgridgarden.com/" },
+    { name: "Codingame Start", url: "https://www.codingame.com/start/" },
+    { name: "Elevator Saga", url: "https://play.elevatorsaga.com/" }
 ];
