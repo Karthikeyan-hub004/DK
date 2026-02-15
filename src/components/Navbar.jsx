@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -12,12 +12,30 @@ const Navbar = () => {
         { name: 'Elevator Saga', url: 'https://play.elevatorsaga.com/' }
     ];
 
+    // Prevent body scroll when mobile menu is open
+    useEffect(() => {
+        if (isMobileMenuOpen) {
+            document.body.classList.add('menu-open');
+        } else {
+            document.body.classList.remove('menu-open');
+        }
+        
+        return () => {
+            document.body.classList.remove('menu-open');
+        };
+    }, [isMobileMenuOpen]);
+
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
     const closeMobileMenu = () => {
         setIsMobileMenuOpen(false);
+        setShowGamesDropdown(false);
+    };
+
+    const toggleGamesDropdown = () => {
+        setShowGamesDropdown(!showGamesDropdown);
     };
 
     return (
@@ -38,6 +56,12 @@ const Navbar = () => {
                     <span></span>
                 </button>
 
+                {/* Mobile Overlay Backdrop */}
+                <div 
+                    className={`mobile-overlay ${isMobileMenuOpen ? 'active' : ''}`}
+                    onClick={closeMobileMenu}
+                ></div>
+
                 {/* Navigation Links */}
                 <div className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
                     <Link to="/tutorial" className="btn btn-outline" style={{ borderColor: '#f59e0b', color: '#f59e0b' }} onClick={closeMobileMenu}>
@@ -51,10 +75,14 @@ const Navbar = () => {
                     </Link>
                     <div 
                         className="dropdown"
-                        onMouseEnter={() => setShowGamesDropdown(true)}
-                        onMouseLeave={() => setShowGamesDropdown(false)}
+                        onMouseEnter={() => window.innerWidth > 768 && setShowGamesDropdown(true)}
+                        onMouseLeave={() => window.innerWidth > 768 && setShowGamesDropdown(false)}
                     >
-                        <button className="btn btn-outline" style={{ borderColor: '#10b981', color: '#10b981' }}>
+                        <button 
+                            className="btn btn-outline" 
+                            style={{ borderColor: '#10b981', color: '#10b981' }}
+                            onClick={toggleGamesDropdown}
+                        >
                             Coding Games ▾
                         </button>
                         {showGamesDropdown && (
