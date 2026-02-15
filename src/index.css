@@ -146,6 +146,109 @@ ul {
     color: var(--primary);
 }
 
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 101;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: var(--text);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 100%;
+        max-width: 300px;
+        height: calc(100vh - 70px);
+        background: var(--surface);
+        border-left: 1px solid var(--border);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 1rem 0;
+        transition: right 0.3s ease;
+        overflow-y: auto;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links .btn {
+        width: 100%;
+        text-align: left;
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid var(--border);
+        padding: 1rem 1.5rem;
+    }
+
+    .nav-links .btn:hover {
+        background: rgba(99, 102, 241, 0.1);
+    }
+
+    .nav-links .dropdown {
+        width: 100%;
+    }
+
+    .nav-links .dropdown .btn {
+        width: 100%;
+    }
+
+    .nav-links .dropdown-menu {
+        position: static;
+        width: 100%;
+        margin-top: 0;
+        border-radius: 0;
+        border: none;
+        border-top: 1px solid var(--border);
+        box-shadow: none;
+    }
+
+    .dropdown-item {
+        padding: 1rem 2rem;
+    }
+}
+
 /* Hero */
 .hero {
     text-align: center;
