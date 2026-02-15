@@ -18,6 +18,9 @@ const Navbar = () => {
                     DomainDetector
                 </Link>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                    <Link to="/tutorial" className="btn btn-outline" style={{ borderColor: '#f59e0b', color: '#f59e0b' }}>
+                        Tutorial
+                    </Link>
                     <Link to="/linkedin-guide" className="btn btn-outline" style={{ borderColor: '#0077b5', color: '#0077b5' }}>
                         LinkedIn Guide
                     </Link>

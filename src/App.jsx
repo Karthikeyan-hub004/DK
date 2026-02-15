@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import DomainDetail from './pages/DomainDetail';
 import LinkedInGuide from './pages/LinkedInGuide';
 import GitHubGuide from './pages/GitHubGuide';
+import Tutorial from './pages/Tutorial';
 import ChatBot from './components/ChatBot';
 import FeedbackModal from './components/FeedbackModal';
 
@@ -21,6 +22,7 @@ function App() {
                         <Route path="/domain/:id" element={<DomainDetail />} />
                         <Route path="/linkedin-guide" element={<LinkedInGuide />} />
                         <Route path="/github-guide" element={<GitHubGuide />} />
+                        <Route path="/tutorial" element={<Tutorial />} />
                     </Routes>
                 </main>
                 <footer className="footer">
